@@ -11,13 +11,13 @@
       <ul class="track__list">
         {{#each tracks}}
           <li class="track">
-            <img src="{{image}}" alt="{{name}}">
+            <img src="{{image}}" alt="{{name}}" height="92px">
             <div class="track__content">
               <strong class="track__name">{{name}}</strong>
               <em class="track__author">{{author}}</em>
             </div>
             <a href="/spotify-track-add?playlistId={{../playlistId}}&trackId={{id}}">
-              <img src="/svg/add_track_button.svg">
+              <img src="/svg/add_track_button.svg" height="42">
             </a>
           </li>
         {{/each}}

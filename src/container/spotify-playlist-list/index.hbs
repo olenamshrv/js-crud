@@ -11,10 +11,10 @@
         <span class='header__title'>Моя бібліотека</span>
         <div class='header__actions'>
           <a href='/spotify-search'>
-            <img src='/svg/loupe.svg' />
+            <img src='/svg/loupe.svg' height="56"/>
           </a>
           <a href='/spotify-choose'>
-            <img src='/svg/plus.svg' />
+            <img src='/svg/plus.svg' height="56"/>
           </a>
         </div>
       </div>
@@ -23,7 +23,7 @@
         {{#each list}}
             <a href="/spotify-playlist?id={{id}}">
               <div class='library__card'>
-                <img class='library__card__image' src='{{image}}' alt='{{name}}' />
+                <img class='library__card__image' src='{{image}}' alt='{{name}}' height="345px"/>
                 <strong class='library__card__title'>{{name}}</strong>
                 <div class='library__card__footer'>{{amount}} пісень</div>
               </div>

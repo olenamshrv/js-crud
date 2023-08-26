@@ -36,37 +36,37 @@ class Track {
 Track.create(
   'Інь Янь',
   'MONATIK і ROXOLANA',
-  'https://picsum.photos/100/100',
+  'https://picsum.photos/92/92',
 )
 
 Track.create(
   'Bailo Conmigo (Remix)',
   'MONATIK і ROXOLANA',
-  'https://picsum.photos/100/100',
+  'https://picsum.photos/92/92',
 )
 
 Track.create(
   'Shameless',
   'Camila Cabelo',
-  'https://picsum.photos/100/100',
+  'https://picsum.photos/92/92',
 )
 
 Track.create(
   'DAKITI',
   'BAD BUNNY і JHAY',
-  'https://picsum.photos/100/100',
+  'https://picsum.photos/92/92',
 )
 
 Track.create(
   '11 pm',
   'Maluma',
-  'https://picsum.photos/100/100',
+  'https://picsum.photos/92/92',
 )
 
 Track.create(
   'Інша любов',
   'Enleo',
-  'https://picsum.photos/100/100',
+  'https://picsum.photos/92/92',
 )
 
 console.log(Track.getList())

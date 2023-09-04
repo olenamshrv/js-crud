@@ -3,20 +3,16 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
  }}
 
-<div class='form'>
-  <div class='form__content'>
-    <div class='form__info'>
-      <h1 class='form__title'>{{info}}</h1>
-      <p class='form__text'>{{details}}</p>
-    </div>
-    <div class='form__action'>
-      <a
-        href='/product-list'
-        class='form__button'
-        type='button'
-      >Повернутись назад</a>
-    </div>
+<div class='card'>
+  <div class='card__header'>
+    <h2 class='card__title'>{{data.message}}</h2>
+    <h3 class='card__subtitle'>{{data.info}}</h3>
   </div>
+  <a
+    href='{{data.link}}'
+    class='card__button'
+    type='button'
+  >Повернутись назад</a>
 </div>
 
 {{! 

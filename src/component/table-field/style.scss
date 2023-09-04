@@ -1,0 +1,17 @@
+@use '../../lib/service.scss' as s;
+
+.main__table__field {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(2);
+}
+
+.main__table__field__label {
+    font-size: 14px;
+    color: s.color("light-dark");
+}
+
+
+
+
+

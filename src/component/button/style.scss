@@ -1,0 +1,23 @@
+@use '../../lib/service.scss' as s;
+
+.purchase__button {
+    display: flex;
+    justify-content: center;
+    
+    background-color: s.color("light-blue");
+    color: white;
+    border-radius: 4px;
+    padding: s.space(2) s.space(5);
+
+    font-family: Roboto;
+
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+
+

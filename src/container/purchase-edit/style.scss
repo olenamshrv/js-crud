@@ -1,0 +1,31 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/field/style.scss' as field;
+@use '../../component/table-field/style.scss' as table-field;
+@use '../../component/button/style.scss' as button;
+
+.main {
+  padding: s.space(6);
+  font-family: Inter;
+  margin: s.space(6);
+  border-radius: 12px;
+  background-color: #FFF;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.form__fields {
+  display: flex;
+  flex-direction: column;  
+  gap: s.space(5);
+}
+
+.main__input-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: s.space(5);
+}
+
+
+
+

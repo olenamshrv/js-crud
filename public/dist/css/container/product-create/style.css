@@ -5,7 +5,7 @@
   gap: 40px;
 }
 .form__title {
-  color: #0056F9;
+  color: #0D6EFD;
   font-weight: bold;
   font-size: 20px;
 }
@@ -48,10 +48,9 @@
 }
 .form__input__caption {
   font-size: 10px;
-  color: rgb(105, 102, 102);
 }
 .form__button {
-  background-color: #0056F9;
+  background-color: #0D6EFD;
   padding: 8px;
   color: #ddd;
   border-radius: 4px;

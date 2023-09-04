@@ -1,0 +1,20 @@
+{{! 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ }}
+
+<div class='heading'>
+  {{#if title}}
+    <h1
+      class='heading__title {{#if options}}{{options}}{{/if}}'
+    >{{title}}</h1>
+  {{/if}}
+  {{#if info}}
+    <p class='heading__info'>{{info}}</p>
+  {{/if}}
+</div>
+
+{{! 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+}}

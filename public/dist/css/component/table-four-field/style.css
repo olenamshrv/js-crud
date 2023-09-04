@@ -1,0 +1,7 @@
+.main__table__four-field {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

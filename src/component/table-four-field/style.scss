@@ -1,0 +1,13 @@
+@use '../../lib/service.scss' as s;
+
+.main__table__four-field {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: s.space(5);
+}
+
+
+
+
+
+

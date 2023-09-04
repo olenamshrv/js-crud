@@ -1,0 +1,27 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/purchase-product/style.scss' as
+ purchaseProduct;
+@use '../../component/table-field/style.scss' as table-field;
+@use '../../component/table-four-field/style.scss' as table-four-field;
+@use '../../component/divider/style.scss' as divider;
+@use '../../component/button/style.scss' as button;
+
+main {
+  display: flex;
+  flex-direction: column;  
+  gap: s.space(5);
+  padding: s.space(6);
+  font-family: Inter;
+  border-radius: 12px;
+  background: #FFF;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  margin: s.space(6);
+}
+
+.main__button {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}

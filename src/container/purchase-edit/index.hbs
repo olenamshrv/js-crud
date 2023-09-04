@@ -1,0 +1,44 @@
+{{! 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ }}
+
+<main class='main'>
+
+    {{#with data.purchase}}
+
+      <form method="POST" action="/purchase-edit">
+
+        <div class="form__fields">
+      
+          {{>heading title="Зміна данних"}}
+
+          {{>table-field label="ID:" info=id}}
+
+          {{>field label="id" value=id name="id" disabled=true}}
+
+          <div class="main__input-fields">
+
+           {{>field label="Прізвище" value=lastname name="lastname"}}
+
+           {{>field label="Ім'я" value=firstname name="firstname"}}
+
+           {{>field label="Пошта" value=email name="email"}}
+
+           {{>field label="Телефон" value=phone name="phone"}}
+
+          </div>
+
+          {{>button text="Зберегти зміни"}}
+
+       </div>
+
+      </form>
+    {{/with}}
+
+</main>
+
+{{! 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+}}

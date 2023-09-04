@@ -19,13 +19,13 @@ app.engine(
     extname: 'hbs',
     defaultLayout: 'default/index',
     layoutsDir: __dirname + '/src/layout/',
-    partialsDir: __dirname + '/src/component/',
-    // {
-    //   dir: __dirname + '/src/component/',
-    //   rename: (filePath) => {
-    //     return `${filePath.split('/')[0]}`
-    //   },
-    // },
+    // partialsDir: __dirname + '/src/component/',
+    partialsDir: {
+      dir: __dirname + '/src/component/',
+      rename: (filePath) => {
+        return `${filePath.split('/')[0]}`
+      },
+    },
   }),
 )
 

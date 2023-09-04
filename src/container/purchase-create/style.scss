@@ -1,0 +1,123 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/purchase-product/style.scss' as
+ purchaseProduct;
+@use '../../component/field/style.scss' as field;
+@use '../../component/divider/style.scss' as divider;
+@use '../../component/button/style.scss' as button;
+
+main {
+  display: flex;
+  flex-direction: column;  
+  gap: s.space(10);
+  padding: s.space(6);
+  font-family: Inter;
+}
+
+.base-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+
+.bold-text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;  
+    gap: s.space(4);
+    align-items: flex-start;
+  }
+
+  .product-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: s.space(5);
+  }
+
+  .product-info__image {
+    max-height: 300px;
+    width: 100%;
+  }
+
+  .product-info__title {
+    font-size: 20px;
+    font-weight: bold
+  }
+
+  .product-info__subtitle {
+    font-size: 16px;
+    color: gray;
+  }
+
+  .product-info__category {
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 14px;
+    color: s.color(dark);
+    border: 1px solid transparent;
+  }
+
+  .product-info__category--1 {
+    color: blue;
+    border-color: blue;
+  }
+
+  .product-info__category--2 {
+    color: green;
+    border-color: green;
+  }
+
+  .product-info__button {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .cart__item {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+    align-items: center;
+    margin-bottom: s.space(5);
+  }
+
+  .cart__start-text {
+    width: 70%;
+  }
+
+  .cart__fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .form-card__total {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+  }
+
+  .cart__button {
+      display: flex;
+      flex-direction: column;
+  }
+
+
+
+
